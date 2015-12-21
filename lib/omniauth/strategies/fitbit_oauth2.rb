@@ -13,7 +13,7 @@ module OmniAuth
           :token_url      => 'https://api.fitbit.com/oauth2/token'
         }
 
-      option :authorize_options, [:scope, :response_type, :expires_in, :prompt]
+      option :authorize_options, [:scope, :response_type, :expires_in, :prompt, :redirect_uri]
       option :response_type, 'code'
 
       def build_access_token
